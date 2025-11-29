@@ -1,0 +1,40 @@
+body,
+input,
+h1,
+button {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 193, 250);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid black;
+    padding-top: 35vh;
+    border-radius: 16px;
+    padding-right: 15vw;
+    padding-left: 15vw;
+    padding-bottom: 35vh;
+    background-color: white;
+}
+
+.input {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 5px;
+    transition: all 0.5s ease;
+}
+
+.input:focus {
+    padding: 3px;
+}
