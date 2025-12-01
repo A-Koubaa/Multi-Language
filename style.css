@@ -1,40 +1,65 @@
-body,
-input,
-h1,
-button {
-    font-family: sans-serif;
+/* Grunddesign */
+body, input, button, h1 {
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(94, 193, 250);
+    min-height: 100vh; 
+    margin: 0;
+    background: linear-gradient(135deg, #5ec1fa, #74d4ff);
 }
 
+/* Karte */
 .card {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid black;
-    padding-top: 35vh;
-    border-radius: 16px;
-    padding-right: 15vw;
-    padding-left: 15vw;
-    padding-bottom: 35vh;
-    background-color: white;
+    gap: 15px;
+    width: clamp(280px, 40vw, 380px);
 }
 
+/* Input */
 .input {
-    border: 1px solid black;
-    border-radius: 8px;
-    padding-left: 5px;
-    transition: all 0.5s ease;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+
+    transition: 0.3s ease;
 }
 
 .input:focus {
-    padding: 3px;
+    outline: none;
+    border-color: #5ec1fa;
+    box-shadow: 0 0 8px rgba(94,193,250,0.5);
+}
+
+/* Button */
+button {
+    padding: 10px 18px;
+    background: #5ec1fa;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background: #3aaddf;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0px);
+    box-shadow: none;
 }
